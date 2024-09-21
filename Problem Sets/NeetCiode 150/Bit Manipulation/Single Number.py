@@ -1,4 +1,4 @@
-https://leetcode.com/problems/single-number/description/
+https://leetcode.com/problems/single-number/
 
 ----------------------------------------------------------------------------------------------
 
@@ -29,6 +29,7 @@ The time complexity is O(n) because the traverse the entire list.
 The space required is O(n) because we store the frequencies of the all the nums list.
 
 ----------------------------------------------------------------------------------------------
+
 Approach 2: Using Sorting
 
 The second method that comes up to nind is using sorting. After sorting we traverse the list and check if one of the adjacent element is equal to current element. if it's not equal then we can return the element.
