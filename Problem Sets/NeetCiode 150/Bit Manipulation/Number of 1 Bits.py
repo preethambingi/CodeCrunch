@@ -32,6 +32,49 @@ Because we iterate over all the bits present in the number.
 
 ----------------------------------------------------------------------------------------------
 
+Approach 2: Unset the Rightmost Set Bit
 
+In the method, we will repeatedly unset the rightmost set bit using n = n & (n - 1), by this we can directly count how many set bits are there.
 
+class Solution:
+    def hammingWeight(self, n: int) -> int:
+        count = 0
 
+        while n > 0:
+            n = n & (n - 1)
+            count += 1
+        
+        return count
+
+Complexity Analysis
+
+-> Time complexoty: O(number of set bits)
+Since for every iteration we will unset one bit.
+
+-> Space complexity: O(1)
+
+----------------------------------------------------------------------------------------------
+
+Approach 3: Using Modulo and Division
+
+In this method, first we will check whether the LSD is set or not, it its set then we will increment the count. Then we will divide the number by two, this will automatically right shift the number by one bit every time.
+
+class Solution:
+    def hammingWeight(self, n: int) -> int:
+        count = 0
+
+        while n > 0:
+            if n & 1 == 1:
+                count += 1
+            n //= 2
+        
+        return count
+
+Complexity Analysis
+
+-> Time complexoty: O(logn)
+Since for every iteration we half the number.
+
+-> Space complexity: O(1)
+
+----------------------------------------------------------------------------------------------
