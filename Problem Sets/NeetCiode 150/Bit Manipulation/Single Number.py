@@ -1,11 +1,10 @@
 https://leetcode.com/problems/single-number/description/
 
---------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------
 
 Approach 1: Using Dictionary (Hashmap)
 
-Here in this problem we have to return an element with frequency = 1. The first method that comes up to the
-mind is storing the frequencies of the elements and then return the element with frequency 1.
+Here in this problem we have to return an element with frequency = 1. The first method that comes up to the mind is storing the frequencies of the elements and then return the element with frequency 1.
 
 We can use dictionaries in python to store the frequencies of the eements.
   
