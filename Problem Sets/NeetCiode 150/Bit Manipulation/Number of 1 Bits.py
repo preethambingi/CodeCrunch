@@ -23,9 +23,14 @@ class Solution:
         
         return count
 
-Complexity Analysis:
+Complexity Analysis
 
-Time complexity: O(number of bits)
+-> Time complexity: O(number of bits)
+Because we iterate over all the bits present in the number.
+
+-> Space complexity: O(1)
+
+----------------------------------------------------------------------------------------------
 
 
 
