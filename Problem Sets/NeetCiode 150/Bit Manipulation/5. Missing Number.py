@@ -3,11 +3,13 @@ https://leetcode.com/problems/missing-number/
 ------------------------------------------------------------------------------------------------
 
 Problem Statement:
+
 Given an array nums containing n distinct numbers in the range [0, n], we must return the only number in the range that is missing from the array.
 
 ------------------------------------------------------------------------------------------------
 
 Approach 1: SUM
+
 In this method, we calcuate the natural sum and then we iterate the list and subtract each number to find the missing number.
   
 class Solution:
@@ -27,6 +29,7 @@ Complexity Analysis
 ------------------------------------------------------------------------------------------------
 
 Approach 2: XOR
+
 In this method, we use XOR operator to find the missing number. We utilize A ^ A = 0 property.
   
 class Solution:
@@ -44,7 +47,9 @@ Complexity Analysis
 -> Space complexity: O(1)
 
 ------------------------------------------------------------------------------------------------
+
 Appraoch 3: Binary Search (This works better if the array is pre-ordered)
+
 In this method, first we sort the array since the array is not ordered. Then we use the Binary Search to find the missing number.
 
 class Solution:
