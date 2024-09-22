@@ -3,11 +3,13 @@ https://leetcode.com/problems/single-number/
 ----------------------------------------------------------------------------------------------
 
 Problem Explanation: 
+
 We are given a non-empty array of integers nums, where every element appears twice except for one. We need to find that single one and return it.
 
 ----------------------------------------------------------------------------------------------
 
 Approach 1: Using Dictionary (Hashmap)
+
 The first method that comes up to the mind is storing the frequencies of the elements and then return the element with frequency 1.
 We can use dictionaries in python to store the frequencies of the eements.
   
@@ -34,6 +36,7 @@ The space required is O(n) because we store the frequencies of the all the nums 
 ----------------------------------------------------------------------------------------------
 
 Approach 2: Using Sorting
+
 The second method that comes up to nind is using sorting. After sorting we traverse the list and check if one of the adjacent element is equal to current element. if it's not equal then we can return the element.
 
 class Solution:
@@ -56,6 +59,7 @@ The space complexity is constant because we are not storing anything.
 ----------------------------------------------------------------------------------------------
 
 Approach 3: Using Bitwise XOR Operator (Most Efficient Approach)
+
 The best approach that comes to mind is using XOR operator. 
 To get better understanding about how it works let's look at some XOR properties:
 X ^ 0 = 0, X ^ X = 0, X ^ X ^ Y = Y
